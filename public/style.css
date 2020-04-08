@@ -1,0 +1,95 @@
+body {
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+    color: #000000
+}
+
+a:hover {
+    border-bottom: 2px solid #808080;
+    color: #808080;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    text-align: center;
+    font-weight: 400;
+    font-size: 11px;
+    color: #2a2d7c;
+    padding: 12px 0;
+}
+
+.bold-logo {
+    color: #c9523d;
+    font-weight: 500;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 7px 15px;
+}
+
+li {
+    font-size: 13px;
+}
+
+/* iPhone 6,7,8 */
+@media (min-width: 375px) {
+    .logo {
+        font-size: 12px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+}
+
+/* iPhone 6,7,8+ */
+@media (min-width: 414px) {
+    .logo {
+        font-size: 13px;
+    }
+
+    li {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+    .logo {
+        margin: 0 35px;
+    }
+    ul {
+        padding: 0;
+        align-items: center;
+        justify-content: space-between;
+        width: 20%;
+        margin: 0 35px;
+    }
+}
+
+@media (min-width: 992px) {
+    nav {
+        padding: 10px 0;
+    }
+    ul {
+        width: 15%;
+    }
+}
+
+
+
+
