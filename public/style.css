@@ -177,3 +177,21 @@ main .description {
 main .description .guest {
     margin-top: 5px;
 }
+
+footer {
+    background-color: #c6d2da;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 11px;
+    padding: 0 15px 10px 20px;
+}
+
+footer h3 {
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+footer p, footer ul {
+    margin-top: 10px;
+}
