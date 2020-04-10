@@ -51,7 +51,8 @@ nav ul li {
   color: #ffffff;
   background-color: #000000;
   font-family: "Open Sans", sans-serif;
-  height: 122px;
+  /* height: 122px; */
+  padding: 38px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -217,7 +218,6 @@ footer ul {
     nav {
         flex-direction: row;
         justify-content: space-between;
-        border: 1px solid black;
         align-items: center;
         padding: 20px 0;
         margin: 0;
@@ -235,10 +235,14 @@ footer ul {
         display: flex;
         justify-content: space-between;
     }
+
+    .countdown {
+        font-size: 60px;
+    }
 }
 
 /* For desktop */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     nav ul {
         width: 12%
     }
