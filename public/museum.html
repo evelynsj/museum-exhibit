@@ -48,23 +48,15 @@
     </div>
 
     <main>
-      <div class="title-text">
+      <div>
         <h3 class="title">Stephan Kaltenbach: The Beginning and The End</h3>
         <h6 class="subtitle">On view January 26-May 10, 2020</h6>
       </div>
-      <div class="carousel">
-        <div class="arrows">
-          <button class="arrow-left" onclick="newSlide('prev')">
-            &#10094;
-          </button>
-          <button class="arrow-right" onclick="newSlide('next')">
-            &#10095;
-          </button>
-        </div>
 
-        <div class="slides">
+      <div class="carousel">
+        <div>
           <div class="slide-section">
-            <p class="order">1 / 4</p>
+            <p class="index">1 / 4</p>
             <img class="image" src="../assets/fabric.jpg" />
             <p class="caption">
               Stephen Kaltenbach and guests, MODERN DRAPERY, 2020. Felt Fabric,
@@ -72,7 +64,7 @@
             </p>
           </div>
           <div class="slide-section">
-            <p class="order">2 / 4</p>
+            <p class="index">2 / 4</p>
             <img class="image" src="../assets/fatherPortrait.jpg" />
             <p class="caption">
               Stephen Kaltenbach, Portrait of My Father, 1972-79. Acrylic on
@@ -80,7 +72,7 @@
             </p>
           </div>
           <div class="slide-section">
-            <p class="order">3 / 4</p>
+            <p class="index">3 / 4</p>
             <img class="image" src="../assets/roomCube.jpg" />
             <p class="caption">
               Stephen Kaltenbach, Room Cube, 1967. Blueprint, 18 x 24 inches,
@@ -88,7 +80,7 @@
             </p>
           </div>
           <div class="slide-section">
-            <p class="order">4 / 4</p>
+            <p class="index">4 / 4</p>
             <img class="image" src="../assets/openAfterDeath.jpg" />
             <p class="caption">
               Stephen Kaltenbach, OPEN AFTER MY DEATH, 1970. Mild steel,
@@ -97,12 +89,21 @@
           </div>
         </div>
 
-        <div class="dots">
-          <span class="dot active" onclick="dotClick(1)"></span>
-          <span class="dot" onclick="dotClick(2)"></span>
-          <span class="dot" onclick="dotClick(3)"></span>
-          <span class="dot" onclick="dotClick(4)"></span>
+        <div>
+          <button class="arrow-left" onclick="newSlide('prev')">
+            &#10094;
+          </button>
+          <button class="arrow-right" onclick="newSlide('next')">
+            &#10095;
+          </button>
         </div>
+      </div>
+
+      <div class="dot-group">
+        <span class="dot active" onclick="dotClick(1)"></span>
+        <span class="dot" onclick="dotClick(2)"></span>
+        <span class="dot" onclick="dotClick(3)"></span>
+        <span class="dot" onclick="dotClick(4)"></span>
       </div>
 
       <div class="description">
@@ -125,30 +126,39 @@
     </main>
 
     <footer>
-    <div>
-      <h3>manetti shrem museum</h3>
-      <p>254 Old Davis Rd. <br>Davis, CA 95616</p>
-    </div>
-    <div>
-      <h3>Hours</h3>
-      <ul>
-        <li>Tuesday, Wednesday, and Friday: Noon-6pm</li>
-        <li>Thursday: Noon-9pm</li>
-        <li>Saturday-Sunday: 11am-5pm</li>
-        <li>Monday: Closed</li>
-      </ul>
-    </div>
-    <div>
-      <h3>The Manetti Shrem Museum will be temporarily closed starting March 16, 2020</h3>
-      <p>This is to prioritize the health and safety of our students, faculty, and the community at large. Thank you for your patience.</p>
-    </div>
+      <div>
+        <h3>manetti shrem museum</h3>
+        <p>254 Old Davis Rd. <br />Davis, CA 95616</p>
+      </div>
+      <div>
+        <h3>Hours</h3>
+        <ul>
+          <li>Tuesday, Wednesday, and Friday: Noon-6pm</li>
+          <li>Thursday: Noon-9pm</li>
+          <li>Saturday-Sunday: 11am-5pm</li>
+          <li>Monday: Closed</li>
+        </ul>
+      </div>
+      <div>
+        <h3>
+          The Manetti Shrem Museum will be temporarily closed starting March 16,
+          2020
+        </h3>
+        <p>
+          This is to prioritize the health and safety of our students, faculty,
+          and the community at large. Thank you for your patience.
+        </p>
+      </div>
     </footer>
 
-    <footer>Made with <a href="https://glitch.com">Glitch</a>!</footer>
+    <!-- <footer>Made with <a href="https://glitch.com">Glitch</a>!</footer> -->
 
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:2em;right:20px;"></div>
+    <!-- <div
+      class="glitchButton"
+      style="position: fixed; top: 2em; right: 20px;"
+    ></div> -->
 
     <!-- import the webpage's browser-side javascript file -->
     <script src="script.js"></script>
