@@ -67,12 +67,16 @@ main {
   display: flex;
   flex-direction: column;
   height: auto;
+  align-items: center;
 }
 
 .title {
   font-size: 18px;
   text-align: center;
   margin: 15px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .subtitle {
@@ -88,6 +92,7 @@ main {
   /* height: 250px; */
   display: flex;
   flex-direction: column;
+  max-width: 600px;
 }
 
 .slide-section {
@@ -112,10 +117,10 @@ main {
 .index {
   color: #ffffff;
   position: absolute;
-  font-size: 10px;
+  font-size: 8px;
   font-weight: 300;
-  top: 8px;
-  left: 8px;
+  top: 3%;
+  left: 2%;
 }
 
 .arrow-left,
@@ -154,17 +159,20 @@ main {
 .caption {
   color: #ffffff;
   font-size: 12px;
-  margin: 6px 15px;
-  bottom: 0px;
+  margin: 0 15px;
+  bottom: 8px;
   text-align: center;
   position: absolute;
   font-weight: 300;
+  left: 0;
+  right: 0;
 }
 
 .dot-group {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 25%;
+  max-width: 80px;
   margin: 15px auto;
 }
 
@@ -184,12 +192,13 @@ main {
 main .description {
   padding: 0 15px;
   font-size: 12px;
-  line-height: 1.2;
-  margin-bottom: 15px;
+  line-height: 1.3;
+  margin-bottom: 30px;
+  max-width: 600px;
 }
 
 main .description .guest {
-  margin-top: 5px;
+  margin-top: 12px;
 }
 
 /* FOOTER */
@@ -215,37 +224,65 @@ footer ul {
 
 /* For tablet */
 @media screen and (min-width: 600px) {
-    nav {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 0;
-        margin: 0;
-    }
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin: 0;
+  }
 
-    .logo {
-        margin: 0 0 0 25px;
-        padding: 0;
-    }
+  .logo {
+    margin: 0 0 0 25px;
+    padding: 0;
+  }
 
-    nav ul {
-        padding: 0;
-        width: 20%;
-        margin-right: 25px;
-        display: flex;
-        justify-content: space-between;
-    }
+  nav ul {
+    padding: 0;
+    width: 20%;
+    margin-right: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .countdown {
-        font-size: 60px;
-    }
+  .countdown {
+    font-size: 60px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .caption {
+    font-size: 15px;
+    bottom: 12px;
+  }
+
+  .arrow-left,
+  .arrow-right {
+    font-size: 25px;
+    padding: 15px;
+  }
+
+  .index {
+    font-size: 10px;
+    top: 3%;
+    left: 3%;
+  }
+
+  .main .description {
+      font-size: 15px;
+  }
 }
 
 /* For desktop */
 @media screen and (min-width: 769px) {
-    nav ul {
-        width: 12%
-    }
+  nav ul {
+    width: 12%;
+  }
+  nav ul li {
+    font-size: 13px;
+  }
 }
 
 /* .arrow-left,
@@ -344,4 +381,3 @@ footer ul {
 main .carousel .dots .dot.active {
   background-color: #778a93;
 } */
-
