@@ -268,7 +268,7 @@ footer ul {
 
   .arrow-left,
   .arrow-right {
-    font-size: 25px;
+    font-size: 20px;
     padding: 15px;
   }
 
@@ -309,7 +309,7 @@ footer ul {
 /* For desktop */
 @media screen and (min-width: 769px) {
   nav ul {
-    width: 12%;
+    width: 15%;
   }
   nav ul li {
     font-size: 13px;
