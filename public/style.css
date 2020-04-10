@@ -1,5 +1,8 @@
 body {
   background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* NAVIGATION */
@@ -51,7 +54,6 @@ nav ul li {
   color: #ffffff;
   background-color: #000000;
   font-family: "Open Sans", sans-serif;
-  /* height: 122px; */
   padding: 38px 0;
   display: flex;
   align-items: center;
@@ -63,11 +65,11 @@ nav ul li {
 
 main {
   font-family: "Open Sans", sans-serif;
-  /* height: 500px; Play with this, max-height? */
   display: flex;
   flex-direction: column;
   height: auto;
   align-items: center;
+  flex-grow: 1;
 }
 
 .title {
@@ -87,9 +89,7 @@ main {
 }
 
 .carousel {
-  /* background-color: #000000; */
   position: relative;
-  /* height: 250px; */
   display: flex;
   flex-direction: column;
   max-width: 600px;
@@ -208,18 +208,26 @@ footer {
   font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column-reverse;
+  padding: 10px 20px;
+  line-height: 1.2;
+}
+
+footer h3 {
   font-size: 11px;
-  padding: 0 15px 20px 15px;
+}
+
+.footer-item {
+  margin: 10px 0;
 }
 
 footer h3 {
   font-weight: 600;
-  margin-top: 20px;
 }
 
 footer p,
 footer ul {
   margin-top: 10px;
+  font-size: 10px;
 }
 
 /* For tablet */
@@ -270,8 +278,31 @@ footer ul {
     left: 3%;
   }
 
-  .main .description {
-      font-size: 15px;
+  main .description {
+    font-size: 15px;
+  }
+
+  footer {
+    flex-direction: row;
+    padding: 0 18px;
+  }
+
+  footer h3 {
+    font-size: 13px;
+  }
+
+  footer p,
+  footer ul {
+    font-size: 12px;
+  }
+
+  .footer-item {
+    margin: 0 10px;
+    padding: 20px 0 15px 0;
+  }
+
+  .footer-item li {
+    margin: 5px 0;
   }
 }
 
@@ -284,100 +315,3 @@ footer ul {
     font-size: 13px;
   }
 }
-
-/* .arrow-left,
-.arrow-right {
-  color: #ffffff;
-  position: absolute;
-  top: 45%;
-  font-size: 15px;
-  cursor: pointer;
-  padding: 10px 12px;
-  border: 0; /* remove the white border */
-/*border-radius: 0 3px 3px 0;
-  background-color: transparent;
-  transition: 0.5s;
-} */
-
-/* .arrow-left:hover,
-.arrow-right:hover {
-  background-color: #000000;
-} */
-
-/* main .carousel .arrow-right {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-} */
-
-/* main .carousel .slides,
-.slide-section {
-  height: 100%;
-  /* height: 250px; */
-/*} */
-
-/* @keyframes transition {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-} */
-
-/* main .carousel .slide-section {
-  animation-name: transition;
-  animation-duration: 1.5s;
-} */
-
-/* main .carousel .image {
-  width: 100%;
-  height: auto;
-  max-height: 100%;
-} */
-
-/* main .carousel .order {
-  color: #ffffff;
-  position: absolute;
-  font-size: 10px;
-  font-weight: 300;
-  top: 8px;
-  left: 8px;
-} */
-
-/* main .carousel .slide-section:not(:first-child) {
-  display: none;
-} */
-
-/* main .carousel .caption {
-  color: #ffffff;
-  font-size: 12px;
-  margin: 6px 15px;
-  bottom: 0px;
-  text-align: center;
-  position: absolute;
-  font-weight: 300;
-} */
-
-/* main .carousel .dots {
-  display: flex;
-  justify-content: space-around;
-  width: 25%;
-  margin: 15px auto;
-} */
-
-/* main .carousel .dots .dot {
-  height: 12px;
-  width: 12px;
-  border-radius: 50%;
-  background-color: #c6d2da;
-  cursor: pointer;
-  transition: background-color 0.5s;
-} */
-
-/* main .carousel .dots .dot:hover {
-  background-color: #778a93;
-} */
-/* 
-main .carousel .dots .dot.active {
-  background-color: #778a93;
-} */
